@@ -1,0 +1,17 @@
+tesseract -l grc ENG_BELL_83_fig1.jpg ENG_BELL_83_fig1
+tesseract -l grc ENG_BELL_83_fig10.jpg ENG_BELL_83_fig10
+tesseract -l grc ENG_BELL_83_fig11.jpg ENG_BELL_83_fig11
+tesseract -l grc ENG_BELL_83_fig12.jpg ENG_BELL_83_fig12
+tesseract -l grc ENG_BELL_83_fig13.jpg ENG_BELL_83_fig13
+tesseract -l grc ENG_BELL_83_fig14.jpg ENG_BELL_83_fig14
+tesseract -l grc ENG_BELL_83_fig15.jpg ENG_BELL_83_fig15
+tesseract -l grc ENG_BELL_83_fig16.jpg ENG_BELL_83_fig16
+tesseract -l grc ENG_BELL_83_fig17.jpg ENG_BELL_83_fig17
+tesseract -l grc ENG_BELL_83_fig2.jpg ENG_BELL_83_fig2
+tesseract -l grc ENG_BELL_83_fig3.jpg ENG_BELL_83_fig3
+tesseract -l grc ENG_BELL_83_fig4.jpg ENG_BELL_83_fig4
+tesseract -l grc ENG_BELL_83_fig5.jpg ENG_BELL_83_fig5
+tesseract -l grc ENG_BELL_83_fig6.jpg ENG_BELL_83_fig6
+tesseract -l grc ENG_BELL_83_fig7.jpg ENG_BELL_83_fig7
+tesseract -l grc ENG_BELL_83_fig8.jpg ENG_BELL_83_fig8
+tesseract -l grc ENG_BELL_83_fig9.jpg ENG_BELL_83_fig9

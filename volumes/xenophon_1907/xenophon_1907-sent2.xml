@@ -1,94 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader>
+<teiHeader xml:lang="eng">
 <fileDesc>
 <titleStmt>
-<title>Xenophon's Anabasis, Memorabilia of Socrates</title>
-<sponsor>University of Leipzig</sponsor>
-<funder>European Social Fund Saxony</funder>
-<principal>Gregory Crane</principal>
+<title xml:lang="eng">Xenophon's Anabasis, Memorabilia of Socrates</title>
+<author>Xenophon</author>
+<editor role="translator">Rev. John Selby Watson</editor>
+<sponsor>Tufts University</sponsor>
+<funder>Arts and Science</funder>
+<principal xml:id="GRC">Gregory Crane</principal>
 <respStmt>
-<persName xml:id="Jouve">Jouve</persName>
-<resp>OCR-ed, corrected and encoded the text</resp>
+<persName>Gregory Crane</persName>
+<resp>Digital conversion and editing</resp>
 </respStmt>
-<respStmt>
-<persName>Greta Franzini</persName>
-<resp>Project Manager (University of Leipzig)</resp>
-</respStmt>
-<respStmt>
-<persName>Simona Stoyanova</persName>
-<resp>Project Assistant (University of Leipzig)</resp>
-</respStmt>
-<respStmt>
-<persName>Bruce Robertson</persName>
-<resp>Technical Advisor (Mount Allison University)</resp>
-</respStmt>
-</titleStmt>
 
+</titleStmt>
 <publicationStmt>
-<authority>University of Leipzig</authority>
-<idno type="filename">xenophon_1907.xml</idno>
+<authority>Tufts University</authority>
+<authority>Perseus Digital Library</authority>
+<idno type="filename">tlg0032.tlg00[26].perseus-eng4.xml</idno>
 <availability>
 <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
 </availability>
-<date>2014</date>
-<publisher>University of Leipzig</publisher>
-<pubPlace>Germany</pubPlace>
+<date type="release">2024-12-14</date>
+<publisher>Tufts University</publisher>
+<pubPlace>Medford, MA, USA</pubPlace>
 </publicationStmt>
-
 <sourceDesc>
-<listBibl xml:lang="la">
+<listBibl xml:lang="eng">
 <biblStruct>
 <monogr>
-<editor>
+<editor role="translator">
 <persName>
-<name xml:lang="en">Rev. John Selby Watson</name>
+<name>Rev. John Selby Watson</name>
 </persName>
 </editor>
-<author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0032">Xenophon</author>
+<editor role="translator">
+
+<persName>
+<name>Rev. John Selby Watson</name>
+</persName>
+</editor>
+<author>Xenophon</author>
 <title>Anabasis</title>
 <title>Memorabilia of Socrates</title>
 <imprint>
-<publisher>George Bell and Sons</publisher>
+<publisher>Henry G. Bohn</publisher>
 <pubPlace>London</pubPlace>
-<date>1907</date>
+<date>1855</date>
 </imprint>
 </monogr>
-<ref target="https://archive.org/details/anabasisorexpedi00xenouoft"
->Internet Archive</ref>
-
+<ref target="https://hdl.handle.net/2027/uc1.b000737729; http://data.perseus.org/catalog/urn:cts:greekLit:tlg0032">Hathi Trust and Internet Archive</ref>
 </biblStruct>
 </listBibl>
 </sourceDesc>
-
 </fileDesc>
 <encodingDesc>
 <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+ <refsDecl n="CTS">
+  <cRefPattern n="section" matchPattern="(\w+)"
+   replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+   <p>This pointer pattern extracts section.</p>
+  </cRefPattern>
+ </refsDecl>
 </encodingDesc>
-
 <profileDesc>
 <langUsage>
-<language ident="en">English</language>
+<language ident="eng">English</language>
 </langUsage>
 </profileDesc>
-
 </teiHeader>
+
 <text>
 <body>
 
-<pb n="-"/>
 
-<pb n="-"/>
-
-<pb n="-"/>
-
-<pb n="-"/>
-
-<pb n="-"/>
-
-<pb n="-"/>
-
-<pb n="-"/>
 
 <div type="textpart" subtype="chapter">
 <head>
@@ -110,9 +97,9 @@
 
 <note type="footnote"> 2 Hellen. iii. 1, 2. </note>
 
-<note type="footnote">3 v. <foreign xml:lang="grc">Θεμιστογενης</foreign>. </note>
+<note type="footnote">3 v. <foreign xml:lang="grc">Θεμιστογένης</foreign>. </note>
 
-<note type="footnote"> 4 Ad Suidam. v. <foreign xml:lang="grc">Θεμιστογευηι</foreign>. </note>
+<note type="footnote"> 4 Ad Suidam. v. <foreign xml:lang="grc">Θεμιστογένης</foreign>. </note>
 
 <note type="footnote">5 Praef. in Anab. p. vii. ed. 1825 </note>
 
@@ -120,7 +107,7 @@
 the Paris manuscripts, should be struck out. The sense will then be, “which is inserted among the writings of Xenophon."</p>
 <p>Suidas being thus interpreted, the two passages will concur in showing that a narrative of the "Anabasis" was written by Themistogenes. The next point to be considered is, whether that narrative which we now have is, or is not, the work of Themistogenes.</p>
 <p>Plutarch, in his Considerations whether the Athenians were more renowned in Arms or in Letters,1 observes, in alluding to the historians, that “Xenophon was a subject of history for himself, for he wrote an account of the military matters which he successfully conducted, but represents that the account was written by Themistogenes the Syracusan, in order that he might have more credit if he spoke of himself as another person, giving to another the reputation of the work." The passage is somewhat obscure, for there is a word, such as <foreign xml:lang="grc">λέγει</foreign>, wanting; I translate it in the sense in which it is taken by Leunclavius and Wyttenbach.</p>
-<p>In agreement with this passage of Plutarch, Tzetzes, in his Chiliads,2 after observing that Phidias made two statues for a young man of whom he was fond, and for whose workmanship, it appears, they were to pass, says that " Xenophon did the same with regard to the Anabasis of Cyrus ; for he set a certain name to the work to please one whom he loved ; * * * it is the book of Themistogenes the Syracusan, and afterwards came to be commonly called the work of Xenophon ; so Plato the philosopher wrote his Dialogues under the names of his friends; and other writers have composed innumerable things in a similar way.” When he says that “it is the book of Themistogenes," <foreign xml:lang="grc">τὸ βιβλίον Θεμιστογένους ἐστι</foreign>, he can have n.; other meaning but that it was given to the world by Xenophon under the name of Themistogenes. A Scholium, which us appended to the passage by an unknown author, states the matter more briefly and clearly: “Xenophon inscribed the A nabasis of Cyrus with the name of Themistogenes, yet it ame to be commonly called afterwards the work of Xenophon.”</p>
+<p>In agreement with this passage of Plutarch, Tzetzes, in his Chiliads,2 after observing that Phidias made two statues for a young man of whom he was fond, and for whose workmanship, it appears, they were to pass, says that " Xenophon did the same with regard to the Anabasis of Cyrus ; for he set a certain name to the work to please one whom he loved ; * * * it is the book of Themistogenes the Syracusan, and afterwards came to be commonly called the work of Xenophon ; so Plato the philosopher wrote his Dialogues under the names of his friends; and other writers have composed innumerable things in a similar way.” When he says that “it is the book of Themistogenes," <foreign xml:lang="grc">τὸ βιβλίον Θεμιστογένους ἐστι</foreign>, he can have no other meaning but that it was given to the world by Xenophon under the name of Themistogenes. A Scholium, which is appended to the passage by an unknown author, states the matter more briefly and clearly: “Xenophon inscribed the A nabasis of Cyrus with the name of Themistogenes, yet it ame to be commonly called afterwards the work of Xenophon.”</p>
 
 <p>From these writers, then, Plutarch, Tzetzes, and his Scholiast. it would appear that the " Anabasis," or account of the expedition of Cyrus, was written by Xenophon, and published
 <note type="footnote"> 1 c. i. </note>
@@ -149,8 +136,8 @@ besides the grammarians and lexicographers, Hesychius, Pollux, Harpocration, and
  
 who brought philosophy down from heaven to dwell with men ; and who was pronounced the wisest of men by the Delphic oracle, "because he judiciously made choice of human nature for the object of his thoughts, an inquiry into which a? much exceeds all other learning, as it is of more consequence to adjust the true nature and measures of right and wrong, than to settle the distances of the planets, and compute the time of their circumvolutions.”3 His doctrine was, 
 <quote rend="blockquote">
-<l xml:lang="grc">Ταῦτ' εἶδως, σοφὸς ἴσϑι' μάτην δ᾽ Ἐπίκουρον ἕασον</l>
-<l xml:lang="grc">Ποῦ τὸ κενὸν ζητεῖν, καὶ τινες αἱ μονάδες. </l>
+<l xml:lang="grc">Ταῦτ' εἶδως, σοφὸς ἴσϑι· μάτην δ᾽ Ἐπίκουρον ἕασον</l>
+<l xml:lang="grc">Ποῦ τὸ κενὸν ζητεῖν, καὶ τίνες αἱ μονάδες. </l>
 
 </quote>
 <quote rend="blockquote">
@@ -1450,9 +1437,7 @@ Cyrus would pursue them with ships of war;</s>
 <pb n="19"/>
 
 </p>
-<p>
 
-</p>
 </div>
 
 <div type="textpart" n="11" subtype="section">
@@ -5599,10 +5584,7 @@ reported to have said, that a soldier ought to fear his commander more than the 
 <pb n="73"/>
 
 </s></p>
-<p>
 
-
-</p>
 </div>
 
 <div type="textpart" n="19" subtype="section">
@@ -6190,10 +6172,7 @@ time began to enumerate the difficulties surrounding them.
 <pb n="81"/>
 
 </s></p>
-<p>
 
-
-</p>
 </div>
 
 <div type="textpart" n="34" subtype="section">
@@ -9072,10 +9051,7 @@ gods who had sent the dream and pointed out the ford, to complete what was wanti
 <pb n="119"/>
 
 </s></p>
-<p>
 
-
-</p>
 </div>
 
 <div type="textpart" n="20" subtype="section">
@@ -9534,10 +9510,7 @@ the villages, under shelter;</s>
 <pb n="125"/>
 
 </s></p>
-<p>
 
-
-</p>
 </div>
 </div>
 
@@ -9955,10 +9928,7 @@ barley-wine,1 in large bowls ;</s>
 <pb n="130"/>
 
 </s></p>
-<p>
 
-
-</p>
 </div>
 
 <div type="textpart" n="33" subtype="section">
@@ -11417,9 +11387,7 @@ on our account, and to make an agreement with them about the passage-money, that
 <pb n="147"/>
 
 </s></p>
-<p>
 
-</p>
 </div>
 </div>
 
@@ -19550,9 +19518,7 @@ camp;</s></p>
 <pb n="245"/>
 
 </s></p>
-<p>
 
-</p>
 </div>
 
 <div type="textpart" n="4" subtype="section">
@@ -21042,9 +21008,19 @@ Romans, under whom it rapidly declined in rank and importance. In the time of Ti
 <pb n="268"/>
 
 </p>
-<p>MAEANDER.—The direction of Cyrus' march appears to have been parallel to the Cogamus, and having made in three days twenty-two parasangs, he arrived at the river Maeander, which he passed on a bridge of seven boats, probably above the junction of the Lycus. The Maeander was celebrated in classic poetry for its tortuousness, whence our term—meandering. Ovid, in describing the Minotaur's labyrinth, compares it with the Maeander. As soft Macander's wanton current plays, When through the Phrygian fields it loosely strays; Backward and forward rolls the dimpled tide, Seeming at once two different ways to glide: While circling streams their former banks survey, And waters past succeeding waters see; Now floating to the sea with downward course, Now pointing upward to its ancient source. It may be remarked here, that considering the stadium and parasang as fragments of the earth's true meridional circumference, as more particularly developed by Colonel Jervis, the amount admitted in the Travels in the Track of the Ten Thousand Greeks, was G07.G2977 English feet for the first, 5468.668 English feet for the second.</p>
-<p>The principle upon which this estimate is founded is this: that the Jewish itinerary measure was the Parsah of 3 Bereh; each Bereh of 7½ Khebel, or 3000 measures. The Parsah, corresponding to the Greek <foreign xml:lang="grc">παρασγγα</foreign>, or the Persian Farsakh, the Bereh to the Turkish Beré, and the Khebel, or rope, to the stadium. The Jewish Bereh was the 24,000th of the earth's true meridional circumference; the fundamental measure, therefore, the 72,000,000th of the meridional circumference, which Colonel Jervis having computed to the ellipticity from a comparative summary of the results of the Lapland, British, French, and Indian measurements, is <figure type="illustration">
-<graphic url="ENG_BELL_83_fig10.jpg"/></figure>or 21.8724876 inches English. Now the element is to the common element, of all those itinerary measures alluded to by Eratosthenes, Cleomedes, Posidonins, and othei historians and other writers, whether Egyptian, Jewish, Greek, Roman, or the earlier Arabian, as 5 to 9,—that is, they were, one and all, the 40,000,000th, the Jewish the 72,000,000th, of the earth's meridional circumference; and hence the true length of the Roman and Greek foot, and cubit, and stadium may be immediately inferred.</p>
+<p>MAEANDER.—The direction of Cyrus' march appears to have been parallel to the Cogamus, and having made in three days twenty-two parasangs, he arrived at the river Maeander, which he passed on a bridge of seven boats, probably above the junction of the Lycus. The Maeander was celebrated in classic poetry for its tortuousness, whence our term—meandering. Ovid, in describing the Minotaur's labyrinth, compares it with the Maeander. 
+<quote rend="blockquote">
+<l>As soft Macander's wanton current plays,</l>
+<l>When through the Phrygian fields it loosely strays;</l>
+<l>Backward and forward rolls the dimpled tide,</l>
+<l>Seeming at once two different ways to glide:</l>
+<l>While circling streams their former banks survey,</l>
+<l>And waters past succeeding waters see;</l>
+<l>Now floating to the sea with downward course,</l>
+<l>Now pointing upward to its ancient source.</l>
+</quote>
+       It may be remarked here, that considering the stadium and parasang as fragments of the earth's true meridional circumference, as more particularly developed by Colonel Jervis, the amount admitted in the Travels in the Track of the Ten Thousand Greeks, was G07.G2977 English feet for the first, 5468.668 English feet for the second.</p>
+<p>The principle upon which this estimate is founded is this: that the Jewish itinerary measure was the Parsah of 3 Bereh; each Bereh of 7½ Khebel, or 3000 measures. The Parsah, corresponding to the Greek <foreign xml:lang="grc">παρασγγα</foreign>, or the Persian Farsakh, the Bereh to the Turkish Beré, and the Khebel, or rope, to the stadium. The Jewish Bereh was the 24,000th of the earth's true meridional circumference; the fundamental measure, therefore, the 72,000,000th of the meridional circumference, which Colonel Jervis having computed to the ellipticity 1/305 from a comparative summary of the results of the Lapland, British, French, and Indian measurements, is (131248051 . 0764841)/72 or 21.8724876 inches English. Now the element is to the common element, of all those itinerary measures alluded to by Eratosthenes, Cleomedes, Posidonins, and othei historians and other writers, whether Egyptian, Jewish, Greek, Roman, or the earlier Arabian, as 5 to 9,—that is, they were, one and all, the 40,000,000th, the Jewish the 72,000,000th, of the earth's meridional circumference; and hence the true length of the Roman and Greek foot, and cubit, and stadium may be immediately inferred.</p>
 <p>For the Jewish Parsah being the eight-thousandth part of the circumference, or 24,000 such measures above stated, was 5468.668 feet English. The Bereh, 1-24,000th of the meridional circumference, or 3000 such measures, was 5468.668 feet English. The Khebel, or stadium =729.15584 feet English (the side,-i. e. the
 
 
@@ -21059,15 +21035,15 @@ miles, making 2.364 geographical miles for each of the five hundred and thirty-f
 <p>"From the preceding calculations," continues Colonel Chesney, " it appears that we are warranted in taking the average value of the parasang at 2.608 geographical miles throughout the march to Thapsacus, and at 1.98, or almost two miles, from thence to Cunaxa; but subsequently it is less than two geographical miles. The greater speed in the first part of the march, was the natural consequence of moving during the most favourable season of the year, (April and May,) with the additional advantage of roads. The want of the latter must have been a serious impediment to the carriages during the next fortnight; for, although the marches were pressing, the heavy-armed men, with their weapons, would have been greatly retarded, by the almost insupportable heat of the summer months ; in the subsequent retreat, the mountains, the rivers, and unknown tracts, as well as the snow on the ground, must have caused still greater retardations." This is a view of the subject which I have also been obliged to adopt in the present commentary.</p>
 <p>COLOSSAE.—Advancing from the Maeander through Phrygia, the army made in one day's march eight parasangs, to Colossae, described as being at that time a large city, rich and well inhabited. This city had indeed been previously noticed by Herodotus,
 (vii. 30,) as a large city of Phrygia oil the Lycus, a tributary to the Maeander. Xerxes, on his march to Sardis, B. C. 481, reached Colossae after leaving Anaua. Colossae had become a place of comparatively little importance in Strabo's time.</p>
-<p>A Christian church was formed here very early, probably by Epaphras, consisting of Jews and Gentiles, to whom Paul, who docs not appear to have ever visited Colossac in person, addressed an Epistle from Rome. Not long after, the town was, together with Laodicea and Hierapolis, destroyed by an earthquake. This, according to Eusebius, was in the ninth year of Nero; but the town must have been immediately rebuilt, for in his twelfth year it continued to be named as a flourishing place. In the middle ages there arose near it a town called Chonae, and Colossae disappeared. Chonae was the birth-place of Nicetas Choniates, one of the Byzantine historians.</p>
-<p>Arundel (Asia Minor, vol. ii. p. 139, &amp;c.) supposed that the ruins at the modern Khonos, which corresponds to Chonac, were also the ruins of Colossac, but Hamilton (Res. &amp;c. i. 508) found extensive ruins of an ancient city about three miles north of Khonos, which appear from certain hydrographical peculiarities alluded to by Herodotus and Pliny, and verified by Hamilton, to be undoubtedly the site of Colossac.</p>
-<p>CELAENAE.-From Colossac Cyrus made in three days' march
+<p>A Christian church was formed here very early, probably by Epaphras, consisting of Jews and Gentiles, to whom Paul, who does not appear to have ever visited Colossae in person, addressed an Epistle from Rome. Not long after, the town was, together with Laodicea and Hierapolis, destroyed by an earthquake. This, according to Eusebius, was in the ninth year of Nero; but the town must have been immediately rebuilt, for in his twelfth year it continued to be named as a flourishing place. In the middle ages there arose near it a town called Chonae, and Colossae disappeared. Chonae was the birth-place of Nicetas Choniates, one of the Byzantine historians.</p>
+<p>Arundel (Asia Minor, vol. ii. p. 139, &amp;c.) supposed that the ruins at the modern Khonos, which corresponds to Chonae, were also the ruins of Colossae, but Hamilton (Res. &amp;c. i. 508) found extensive ruins of an ancient city about three miles north of Khonos, which appear from certain hydrographical peculiarities alluded to by Herodotus and Pliny, and verified by Hamilton, to be undoubtedly the site of Colossae.</p>
+<p>CELAENAE.-From Colossae Cyrus made in three days' march
 
 <pb n="271"/>
-twenty parasangs, to Cclacnae, a city of Phrygia, large, rich, and well inhabited, and where was the fortified palace of Xerxes, the palace of Cyrus, the hunting park, and the cave of Marsyas. Herodotus speaks of Celaenae in describing the march of Xerxes to Sardes. He says (vii. 26) that the sources of the Maeander are here, and those of a stream not less than the Maeander: it is named Catarrhaetes, and rising in the Agora of Celaenae, flows into the Macander. The Cattarrhactes of Herodotus is clearly the Marsyas of Xenophon. Hamilton, who visited the source at a place called Deenair or Dinair, describes it as a considerable stream of water gushing out with great rapidity at the base of a rocky cliff. It appeared as if it had formerly risen in the centre of a great cavern, and that the surrounding rocks had fallen in from the cliffs above. In Livy's description (xxxviii. 13) the Maeander rises in the acropolis of Celaenae, and runs through the middle of the city; and the Marsyas, which rises not far from the sources of the Macander, joins the same river. Leake thinks that it clearly appears from Strabo that both the rivers (Marsyas and Macander) ran through Celaenae, and that they united in the suburb which afterwards became the new city Apameia. It did not appear to Hamilton that the cliff above the source of the Marsyas could be the acropolis of Celaenae, which Alexander considered to be impregnable, and came to terms with the inhabitants. He supposes that the acropolis may have been further to the N. E., a lofty hill about a mile from the ravine of the Marsyas.</p>
+twenty parasangs, to Celaenae, a city of Phrygia, large, rich, and well inhabited, and where was the fortified palace of Xerxes, the palace of Cyrus, the hunting park, and the cave of Marsyas. Herodotus speaks of Celaenae in describing the march of Xerxes to Sardes. He says (vii. 26) that the sources of the Maeander are here, and those of a stream not less than the Maeander: it is named Catarrhaetes, and rising in the Agora of Celaenae, flows into the Macander. The Cattarrhactes of Herodotus is clearly the Marsyas of Xenophon. Hamilton, who visited the source at a place called Deenair or Dinair, describes it as a considerable stream of water gushing out with great rapidity at the base of a rocky cliff. It appeared as if it had formerly risen in the centre of a great cavern, and that the surrounding rocks had fallen in from the cliffs above. In Livy's description (xxxviii. 13) the Maeander rises in the acropolis of Celaenae, and runs through the middle of the city; and the Marsyas, which rises not far from the sources of the Macander, joins the same river. Leake thinks that it clearly appears from Strabo that both the rivers (Marsyas and Macander) ran through Celaenae, and that they united in the suburb which afterwards became the new city Apameia. It did not appear to Hamilton that the cliff above the source of the Marsyas could be the acropolis of Celaenae, which Alexander considered to be impregnable, and came to terms with the inhabitants. He supposes that the acropolis may have been further to the N. E., a lofty hill about a mile from the ravine of the Marsyas.</p>
 <p>The town of Apameia Cibotus, which was built by Antiochus Soter out of the ruins of Celaenae, was positively stated by Strabo to lie at the source of the Marsyas. Arundel was the first who clearly saw that Apameia must be at Dinair; and his conclusions were confirmed by a Latin inscription which he found recording the erection of a monument by the merchants residing there. Leake has also collected the ancient testimonies as to Apameia. Hamilton investigated the hydrographic and other features of the place most carefully, and obtained several Greek inscriptions from the same neighbourhood.</p>
 <p>PELTAE—From Celaenae Cyrus made in two days' march ten parasangs, and arrived at Peltae, a city well inhabited. Peltac, or rather the Peltenus Campus, has been identified with the plain now called Baklan uvah, which is watered by the Macander. Hamilton (ii. 163) describes himself as much struck with its level extent, and capabilities for manoeuvring cavalry. It may be, he says, the plain on which Cyrus reviewed his troops, and celebrated martial games after leaving Apameia:* for although he was marching to the east, it appears that he did not proceed thither
-<note type="footnote"> * At page 203, vol. ii. of his Researches, &amp;c., Mr. Hamilton says he is inclined to place Peltae either in the groat plain to the south of Ishakli, or <unclear/> it the foot of the mountainstwo miles on the road from Ishakli to Dinair. </note>
+<note type="footnote"> * At page 203, vol. ii. of his Researches, &amp;c., Mr. Hamilton says he is inclined to place Peltae either in the great plain to the south of Ishakli, or at the foot of the mountains two miles on the road from Ishakli to Dinair. </note>
 
 <pb n="272"/>
 direct; as Xenophon says that he passed through Ceramorum Agora, a town on the frontiers of Mysia, twenty-two parasangs from Apameia, which must have been to the N. N. W.</p>
@@ -21094,14 +21070,14 @@ market of the Cramians more or less to the N. W. of Ushak, according to the esti
 <pb n="274"/>
 the Ten Thousand Greeks." I may however be permitted to observe, that the identification was not solely founded upon the circumstance of Surmanah being a dry upland. It was also founded on back distances from Iconium 20 parasangs to Tyriaeum, 10 to Thymbrium, and tO to the plain of Caystrus, or 120 geographical miles. Eber Göl, or Ibar Gül, being at a less distance. There is a stream of water at Surmanah as well as at Chai Kiui, and Xenophon tells us there was also in Cyrus's time a well-peopled city. So that it was not because it was an arid plain that it can be also shown not to have been a fit place for a delay of five days. I may also add that so marshy is the plain of Bulavadin, that the road from the N. W. to that town has to be carried in great part over a raised causeway. Hamilton (ii. 177) describes Surmanah as “a rich mine of antiquarian treasures," as is also the case with Afyum Kara Hissar in the same neighbourhood, which he looks upon as the site of ancient Synnada. The same observing traveller however makes mention of no ruins at or near Chai Kiui, which he also identifies with the Holmi of Strabo.</p>
 <p>THYMBRIUM.—During a halt of five days on the plain of Caystrus, Cyrus received Epyaxa, the queen of Cilicia ; whose mysterioils visit and opportune supply of treasure enabled him to appease the Greeks by giving them three months’ arrears of pity. Accompanied by Epyaxa, he advanced thence, ten parasangs, to Thymbrium, on the borders of Lycaonia.</p>
-<p>Estimating the parasang at three geographical miles, I have identified Thymbrium with the modern Ishakli, reckoning back from leonium. Even at the reduced estimate of Hamilton, ten parasangs, equal upon his scale to 24 or 25 geographic miles, measured from the site of Ilghun, or from the hot baths, brings us beyond Philomelium at Ak-Shahir, and nearly half way between that town and the fountain of Ulu Bunar Darbund. Hamilton describes that fountain as only four or five miles from Ak-Shahir, whereas I was upwards of two hours travelling from the one to the other. Colonet Chesney (ii. 208) places Thymbrium " at or a little south-eastward of the present town of Ak-Shahir,”</p>
-<p>The expression used by Xenophon, <foreign xml:lang="grc">ἐνταυ̃θα ην παρὰ τὴν ὁδὸν</foreign>, would certainly appear to denote that he passed the fountain of Midas on the road to Thymbrium, although Spelman translates it " Here was a fountain near the road, called the fountain of Midas." "There seems, therefore,” says Hamilton, (ii. 202,) “every reason for placing Thymbrium at the foot of Sultan Tagh, between the fountain of Midas and Ak Shehr (Shahir), if indeed it be not an an older name for Philomelium itself." There certainly seems, however, taking the reduced estimate of the value of the parasang adopted by Hamilton and Colonel Chesney, still to remain more reasons for approximating the site of Thymbrium to the fountain of Midas than to Ak-Shahir, only that towns have mostly
+<p>Estimating the parasang at three geographical miles, I have identified Thymbrium with the modern Ishakli, reckoning back from Iconium. Even at the reduced estimate of Hamilton, ten parasangs, equal upon his scale to 24 or 25 geographic miles, measured from the site of Ilghun, or from the hot baths, brings us beyond Philomelium at Ak-Shahir, and nearly half way between that town and the fountain of Ulu Bunar Darbund. Hamilton describes that fountain as only four or five miles from Ak-Shahir, whereas I was upwards of two hours travelling from the one to the other. Colonet Chesney (ii. 208) places Thymbrium " at or a little south-eastward of the present town of Ak-Shahir,”</p>
+<p>The expression used by Xenophon, <foreign xml:lang="grc">ἐνταῦθα ἦν παρὰ τὴν ὁδὸν</foreign>, would certainly appear to denote that he passed the fountain of Midas on the road to Thymbrium, although Spelman translates it " Here was a fountain near the road, called the fountain of Midas." "There seems, therefore,” says Hamilton, (ii. 202,) “every reason for placing Thymbrium at the foot of Sultan Tagh, between the fountain of Midas and Ak Shehr (Shahir), if indeed it be not an an older name for Philomelium itself." There certainly seems, however, taking the reduced estimate of the value of the parasang adopted by Hamilton and Colonel Chesney, still to remain more reasons for approximating the site of Thymbrium to the fountain of Midas than to Ak-Shahir, only that towns have mostly
 
 <pb n="275"/>
-succeeded to one another at the same site. The road, it is to be remarked upon this assumption of the value of the parasang, presents few difficulties, and it improves still more on approaching Iconium. I can understand the parasang covering little plane surface in the passes of Kurdistan or the snows of Armenia, but I cannot help feeling, with Colonel Jervis, that to suppose a varying estimate of that value on the plains of Asia Minor, argues a great want of intelligence on the part of the ancients, and reduces them to the semi-barbarous position of the modern Turk and Persian, who, reckoning by time and not by distance, leave it impossible, without actual investigation, to determine from such data the geographical position of places. It is obvious, therefore, in the instances of Peltae, Ceramon Agora, Caystri Campus, Thymbrium, and Tyriaeum, where we have only distances to go upon, we must remain more or less in a state of uncertainty as to their true posié tions. The fountain of Midas helps to throw some additional light upon the positioning of Thymbrium, that of Tyriaeum is confirmed by Strabo, and Ushak, as representing the market of the Cramians, remains to the present day a place of considerable traffic and commerce, and a place of meeting of high roads. These circumstances must be taken into consideration in determining the position of the sites noticed by Xenophon between Celacnae and Iconium, two known positions.</p>
+succeeded to one another at the same site. The road, it is to be remarked upon this assumption of the value of the parasang, presents few difficulties, and it improves still more on approaching Iconium. I can understand the parasang covering little plane surface in the passes of Kurdistan or the snows of Armenia, but I cannot help feeling, with Colonel Jervis, that to suppose a varying estimate of that value on the plains of Asia Minor, argues a great want of intelligence on the part of the ancients, and reduces them to the semi-barbarous position of the modern Turk and Persian, who, reckoning by time and not by distance, leave it impossible, without actual investigation, to determine from such data the geographical position of places. It is obvious, therefore, in the instances of Peltae, Ceramon Agora, Caystri Campus, Thymbrium, and Tyriaeum, where we have only distances to go upon, we must remain more or less in a state of uncertainty as to their true positions. The fountain of Midas helps to throw some additional light upon the positioning of Thymbrium, that of Tyriaeum is confirmed by Strabo, and Ushak, as representing the market of the Cramians, remains to the present day a place of considerable traffic and commerce, and a place of meeting of high roads. These circumstances must be taken into consideration in determining the position of the sites noticed by Xenophon between Celacnae and Iconium, two known positions.</p>
 <p>TYRIAEUM.—Cyrus made in two days' march ten parasangs, and arrived at Tyriaeum, a populous town. Hamilton and Colonel Chesney, upon the evaluation of distances before alluded to, think that Tyriaeum is probably represented by Ilghun. I sought for the site at Arkut Khan, but without wishing to put much stress upon so indefinite a point. Neither Hamilton nor myself saw any remains of ancient times at either Arkut Khan or Ilghun. There is this to be said of Ilghun, that there is beyond that town a plain much better adapted for the review of the Greek and Barbarian forces described by Xenophon, than at Arkut Khan, where the surface of the soil is broken up by slabs of horizontal limestone. Hamilton also remarks that their identification is confirmed by Strabo's account of the great road from Ephesus to Mazaca ; for he clearly places Tyriaeum between Philomelium and Laodicea, and near the borders of Lycaonia. Another argument in favour of this site is, that Strabo states that Holmi was at the commencement of Phrygia Paroreius, which would therefore be at the western extremity of Sultan Tagh, and he gives the distance from Holmi to Tyriaeum as rather more than 500 stadia. Now the distance from the commencement of the Sultan Tagh to Ilghun is
 55 miles, and from Chai Kiui, which Hamilton identifies with Holmi, just about 50 miles, or 500 stadia.</p>
-<p>ICONIOM.—From Tyriacum Cyrus made in three days march twenty parasangs, and came to Iconium, the last city of Phrygia.
+<p>ICONIUM.—From Tyriacum Cyrus made in three days march twenty parasangs, and came to Iconium, the last city of Phrygia.
 
 <pb n="276"/>
 This, as one of the most ancient and remarkable cities of Asia Minor, requires little notice at our hands. Pliny calls it urbs celeberrima Iconium. Strabo speaks of it as small but well built.</p>
@@ -21645,7 +21621,7 @@ natives of the coast occupied in the present day in extracting iron from the sup
 
 <pb n="337"/>
 along the coast to Thrace; Xenophon himself, at the head of 1700 heavy-armed men, 300 targeteers, and 40 horsemen, marching, according to Colonel Chesney, towards Calpe in a direct line. I read it, however, through the middle of the country, a phrase which is twice repeated in the account of the journey, and as the district that lies between the shore and the plains of Tuz-cha and Sabancha, is occupied by the Yailah Tagh, a densely wooded range of hills, totally impassable to a body of troops, there remained no alternative but to keep to the shore or to take to the middle of the country. My idea, as expressed in the “Travels in the Track," and which I am still inclined to hold by, is, that Xenophon, in the pursuit of booty,crossed the Yailah Tagh—ancient Mons Hypius,and descended upon the fertile plain of Prusa ad Hypium, but on nearing of the the straits in which his comrades were placed at Calpe, he returned thither through the westerly prolongation of the same hills. The promontory of Calpe enjoyed in those times the same name as that of Gibraltar. It is now called Kirpah or Kafkan Adasi.</p>
-<p>CHRYSOPOLIS.—After a long stay and no small disasters entailed by the restlessness of the Greeks at Calpe, they started from that place, marching through Bithynia, or Asiatic Thrace, as it was also called, six days' march, to Chrysopolis—the Golden city, the modern Uskudar or Scutari, opposite to Constantinople. The dislance travelled upon this occasion by road of some eighty miles in six days, gives an average of thirteen miles a day, showing that eight, ten, and twelve were as often assumed ordinary day's journeys, under circumstances of greater difficulties, according to the exigencies of the case, and may indeed have been still less. The retreat of the Ten Thousand may in reality be said to end at this point, for the kind of business which they became engaged in after crossing the Bosphorus, has nothing to do with that on which they were originally taken from their homes by the ambition of Cyrus.</p>
+<p>CHRYSOPOLIS.—After a long stay and no small disasters entailed by the restlessness of the Greeks at Calpe, they started from that place, marching through Bithynia, or Asiatic Thrace, as it was also called, six days' march, to Chrysopolis—the Golden city, the modern Uskudar or Scutari, opposite to Constantinople. The distance travelled upon this occasion by road of some eighty miles in six days, gives an average of thirteen miles a day, showing that eight, ten, and twelve were as often assumed ordinary day's journeys, under circumstances of greater difficulties, according to the exigencies of the case, and may indeed have been still less. The retreat of the Ten Thousand may in reality be said to end at this point, for the kind of business which they became engaged in after crossing the Bosphorus, has nothing to do with that on which they were originally taken from their homes by the ambition of Cyrus.</p>
 <p>The Ten Thousand in European THRACE.—From Chrysopolis the Greeks crossed over to Byzantium, where they were but scurvily treated by the Lacedaemonian admiral Anaxibius, and hence obliged to quarter in some Thracian villages. Xenophon sailed in the mean time to Cyzicus, (now Baal Kiz,) from whence he returned to his comrades, and led them all, except such as remained with Neon and such as had disbanded on finding themselves in Europe, to Perinthus, now Haraldi. From this point they were induced by large promises to assist Seuthes, son of Maesades, to recover his patrimony as one of the independent kings of Thrace. In execution of this compact they marched into the country called the Delta of the Thracians, above Byzantium, that of the Melinophagi, who dwelt in the eastern part of the Kutchuk Balkhan,
 (Little Balkhan,) and they arrived at Salmydissus or Kalmydissus, now Midiyah, on the Euxine. After they had subdued the
 
@@ -21654,7 +21630,7 @@ along the coast to Thrace; Xenophon himself, at the head of 1700 heavy-armed men
 <pb n="338"/>
 inhabitants, who lived chiefly by the plunder of wrecks, they returned and encamped on a plain above Selymbria.</p>
 <p>The Greeks arrive at PERGAMUS.—At this point the Greeks parted from Seuthes, who had failed to fulfil his promises made to them, and crossing the Propontis, they repaired to Lampsacns, a well-known port on the Hellespont, now called Lamsaki. From hence they marched through Troas, and passing over the celebrated Mount Ida, they came first to Antandrus, now Antandros, <unclear>near</unclear> Adramiti. Hence they continued their march along the coast of the Lydian sea, to the plain of Thebes. It is known, from Herodotus and Livy, that the plain of Adramyttium was so called. Thence they passed through Adramyttium or Atramyttium Certonium, which is believed to be the Karene of Herodotus, and Atarne, an Aeolian city-the Atarneus of Strabo, from whence they reached Pergamus, where the narrative of the historian finally ceases.</p>
-<p>The whole of the way, both of the Expedition and of the Retreat, is said to have comprised two hundred and fifteen days' march, of eleven hundred and fifty-five parasangs, and of thirty thousand six hundred and fifty stadia. and the time employed iD <unclear/> both. was a year and three months.</p>
+<p>The whole of the way, both of the Expedition and of the Retreat, is said to have comprised two hundred and fifteen days' march, of eleven hundred and fifty-five parasangs, and of thirty thousand six hundred and fifty stadia: and the time employed in both. was a year and three months.</p>
 
 <pb n="339"/>
 
@@ -21727,7 +21703,7 @@ i.2.9. Cyrus had a palace there. The site is now called Dinair or Deenair. Leake
 <p>Coetae, vii.8.25. Perhaps a corruption of Taochi :see Dindorf ad loc.</p>
 <p>Colchians, iv.8.23; vii.8.25 ; oppose the Greeks, but are defeated, iv.8.9, 18 ; Greeks suffer from the Colchian honey, iv.8.
 20 ; their deputies stoned, v.7.2.</p>
-<p>Colossac, a large city of Plirygia Major, i.2.6. Supposed by Arundel (ii. 159) to be represented by ruins at the modern Chonos or Khonos, but identified by Hamilton with ruins about three miles north of that site (i.508.)</p>
+<p>Colossae, a large city of Plirygia Major, i.2.6. Supposed by Arundel (ii. 159) to be represented by ruins at the modern Chonos or Khonos, but identified by Hamilton with ruins about three miles north of that site (i.508.)</p>
 <p>Comania, vii.8.15. It seems to have been a fortress not far from Pergamus. Zeune ad loc.</p>
 <p>Corsote, a deserted city on the river, or canal, Mascas, i.5.4. Supposed to be represented by ruins at a site now called Irzah or Werdi. Ainsw. p. 79.</p>
 <p>Cotyora, a Greek city, and colony of the Sinopians, situated on the Euxine in the territory of the Tibareni, v.5.3, 4. Cramer (i.
@@ -21915,9 +21891,9 @@ Byzantium and Perintlius, vii.2.8 ; 5.15. Now called Silicri, Ainsw. p. 227.</p>
 
 
 <s n="5">In the first place, that he did not respect the gods whom
-<note type="footnote"> 1 Plato, in his Apology of Socrates, mentions his accusers by name : Melctus, a bad author of tragedies and songs (see Aristoph. Ran. 1302, and the Scholiast); Anytus, who was a tanner or currier, a-! appears from Xen. Apol. sect. 29, illustrated by the industry of Bornemann, p. 72, ed. 1824, and p. 350, ed. 1829; and Lyco, an ora-tor, to whom allusion seems to be made in Aristoph. Vesp. 1301. Kühner. </note>
+<note type="footnote"> 1 Plato, in his Apology of Socrates, mentions his accusers by name : Meletus, a bad author of tragedies and songs (see Aristoph. Ran. 1302, and the Scholiast); Anytus, who was a tanner or currier, as appears from Xen. Apol. sect. 29, illustrated by the industry of Bornemann, p. 72, ed. 1824, and p. 350, ed. 1829; and Lyco, an orator, to whom allusion seems to be made in Aristoph. Vesp. 1301. Kühner. </note>
 
-<note type="footnote"> 2 <foreign xml:lang="grc">Οὐ νομίζων</foreign>.] <foreign xml:lang="grc">Νομίζειν θεούς</foreign> is deos more publico (<foreign xml:lang="grc">τῴ νόμῳ</foreign>) receptos, cobere. ***Hence <foreign xml:lang="grc">οὶ νενομισμένοι. θεοὶ</foreign> are the gods publicly acknowledged and worshipped, Kühner </note>
+<note type="footnote"> 2 <foreign xml:lang="grc">Οὐ νομίζων</foreign>.] <foreign xml:lang="grc">Νομίζειν θεούς</foreign> is deos more publico (<foreign xml:lang="grc">τῴ νόμῳ</foreign>) receptos, colere. ***Hence <foreign xml:lang="grc">οἱ νενομισμένοι θεοὶ</foreign> are the gods publicly acknowledged and worshipped, Kühner </note>
 
 <pb n="350"/>
 
@@ -21984,17 +21960,14 @@ the city respects, what proof did they bring ?</s>
 
 
 
-<note type="footnote"> 1 an omen taken from the voices of men. See Cicero de Div. i.45. 102; where it is said that the Pythagoreans observed not only the voices of the gods, but also those of men, and called the signs from them omina. See Eustath, ad Il. <foreign xml:lang="grc">κ</foreign>', p. 799; Xen. Apol. 12; Bornemann ad Apol. IS, p. 51, ed. 1824; Herbst on Sympos. iN,. 4S, and on this passage. Kühner. </note>
+<note type="footnote"> 1 an omen taken from the voices of men. See Cicero de Div. i.45. 102; where it is said that the Pythagoreans observed not only the voices of the gods, but also those of men, and called the signs from them omina. See Eustath, ad Il. <foreign xml:lang="grc">κ</foreign>', p. 799; Xen. Apol. 12; Bornemann ad Apol. 18, p. 51, ed. 1824; Herbst on Sympos. iv,. 48, and on this passage. Kühner. </note>
 
 <note type="footnote"> 2 <foreign xml:lang="grc">Πω̃ς ον̀κ εὶναι θεον̀ς ένόμιζεν</foreign>;] Xenophon here goes out of his line of argument, and introduces a new point, which is not given in the charge against Socrates as it stands in sect. 1. he there says that Socrates was accused of introducing new gods, not of denying that there were gods. Plato, in his Apology, p. 36, C., has made a far more accurate distinction between these two points of accusation. Kühner. It is observable, that if <foreign xml:lang="grc">εἶναι</foreign> were omitted, the question would be in accordance with the accusation: “ How could he, who trusted in the gods, not pay respect to the gods? " </note>
 
 <pb n="351"/>
 
 </p>
-<p>
 
-
-</p>
 </div>
 
 <div type="textpart" n="6" subtype="section">
@@ -23281,10 +23254,7 @@ to such intimation, than any one could have persuaded him to take for his guide 
 <pb n="371"/>
 
 </s></p>
-<p>
 
-
-</p>
 </div>
 
 <div type="textpart" n="8" subtype="section">
@@ -26388,10 +26358,7 @@ repaying it, I now think that I can endure to do so, in order to gain the necess
 <pb n="419"/>
 
 </s></p>
-<p>
 
-
-</p>
 </div>
 </div>
 
@@ -32767,7 +32734,7 @@ such as have done wrong, and such as have suffered wrong, is by no means similar
 </ab>
 <p>The figures to which no letter Is prefixed refer to the Anabasis ; those to which M. is prefixed, to the Memorabilia,</p>
 <p>The names inserted in the " Geographical Index" to the Anabasis, are hero omitted.</p>
-<p>Abrocomas, an enemy of Cyrus on the Euphrates, i.3.20; some Greek mercenaries revolt from him to Cyrus, i.4.3 ; makes no defence, i.4.5; burns ships, to prevent Cyrus crossing the Euphrates, i.4. IS ; arrives at Cunaxa after the battle, i.7.12.</p>
+<p>Abrocomas, an enemy of Cyrus on the Euphrates, i.3.20; some Greek mercenaries revolt from him to Cyrus, i.4.3 ; makes no defence, i.4.5; burns ships, to prevent Cyrus crossing the Euphrates, i.4. 18 ; arrives at Cunaxa after the battle, i.7.12.</p>
 <p>Abrozelmes, a Thracian, vii. G. 43.</p>
 <p>Achaeans, numerous in the army, vi.2.10.</p>
 <p>Acumenus, a physician, M. iii.
@@ -32818,7 +32785,7 @@ such as have done wrong, and such as have suffered wrong, is by no means similar
 2,8.</p>
 <p>Argo, vi.2.1.</p>
 <p>Ariaeus, the friend of Cyrus, commands his left wing, i.8.5; 9.
-31; flees when Cyrus is killed, i.9.31 ;declines the command, ii.2.1 ;proposes a route to the Greeks, ii.2.11; is pardoned by the king, and neglects the Greeks, ii.4.2.</p>
+31; flees when Cyrus is killed, i.9.31 ; declines the command, ii.2.1 ;proposes a route to the Greeks, ii.2.11; is pardoned by the king, and neglects the Greeks, ii.4.2.</p>
 <p>Aristarchus, the Spartan harmost at Byzantium, sells four hundred of the Greeks as slaves, vii.2.5, 6; bribed by Pharnabazus to prevent the Greeks from crossing into Asia, vii.2.12 ; 6.
 13, 24; plots against Xenophon, vii.2.14.</p>
 <p>Aristarchus assisted by the advice of Socrates, M. ii.7.</p>
@@ -32874,8 +32841,9 @@ honour commended by Seuthes, who calls them his kinsmen, vii.
 <p>Cephisodorus, an officer, iv.2.13; killed, 17.</p>
 <p>Ceramon, M. ii.7.3.</p>
 <p>Cerberus, vi.2.22</p>
-<p><figure type="illustration">
-<graphic url="ENG_BELL_83_fig17.jpg"/></figure></p>
+<p>Chaerephon, M. disciple of Socrates, M. i.2.48; his disagreement with Chaerecrates, M. ii.3.1.</p>
+<p>Chaerecrates, M. disciple of Socrates, M. i.2.48; his disagreement with Chaerephon, M. ii.3.1.</p>
+
 <p> Charicles, M. i.2.31.</p>
 <p>Charmides, M. iui. 6.1 ; iii.7.1.</p>
 <p>Cheirisophus the Lacedaemonian, joins Cyrus with seven hundred men, i.4.3; is sent to Ariaeus, ii.1.5; praises Xenophon, iii. I.
@@ -32991,7 +32959,7 @@ commander, put to death, M. i.1. i8.</p>
 
 </p>
 <p>Hermocrates, a follower of Socrates, M. i.2.48.</p>
-<p>liermogenes, M. ii.10. 3; iv.8.4.</p>
+<p>Hermogenes, M. ii.10. 3; iv.8.4.</p>
 <p>Hesiod, cited, M. i.2.56 ; i.3.3; ii.1.20.</p>
 <p>Hieronymus of Elis, a captain under Proxenus, iii.1.34; vi.4.
 10; deputed to Anaxibius, vii.
@@ -33005,7 +32973,7 @@ commander, put to death, M. i.1. i8.</p>
 <ab>
 <title type="sub">I</title>
 </ab>
-<p>lonia, cities of, revolt from Tissaphernes to Cyrus, i.1.6.</p>
+<p>Ionia, cities of, revolt from Tissaphernes to Cyrus, i.1.6.</p>
 <p>Itabelius assists Asidates, vii.8.15.</p>
 <ab>
 <title type="sub">J</title>
@@ -33016,7 +32984,7 @@ commander, put to death, M. i.1. i8.</p>
 <title type="sub">L</title>
 </ab>
 <p>Lacedaemonians taught to steal, iv.
-6.15; contend with the Athensans, vi.1.27; are successful, vi.
+6.15; contend with the Athenians, vi.1.27; are successful, vi.
 6.12; places subject to them, vii.1.28. Their respect for old age, and for their magistrates, M. iii.5.15; their exorcises, ib.; their concord, M. iii.5.16; their arms, M. iii.9.2. See also M. iv.4.15.</p>
 <p>Lamprocles, son of Socrates, admonished, M. ii.2.1.</p>
 <p>Lebadea, M. iii.5.4.</p>
@@ -33094,8 +33062,8 @@ character, ii.6.21.—A maker of cloaks, M. ii.7.6.</p>
 <p>Pategyas, a friend of Cyrus, i.8.1.</p>
 <p>Peloponnesians, their war with the Athenians, M. iii.5.4, 10, 11.</p>
 <p>Pericles, M. i.2.40; ii.6.13; iii.
-5.1.
--,the younger, his conversation with Socrates, At. iii.5.1.</p>
+5.1.</p>
+<p>Pericles,the younger, his conversation with Socrates, At. iii.5.1.</p>
 <p>Persians, their power, M. ii.1.10;
 'ii.5.11.</p>
 <p>Phaedondes, M. i.2.48.</p>
